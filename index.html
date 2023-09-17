@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evans Frank Essoun - WDD 230 -Web Frontend Development</title>
+    <meta
+      name="description"
+      content="A course assignment portal for WDD 230 - Web Frontend Development created by Evans Frank Essoun"
+    />
+    <meta name="author" content="Evans Frank Essoun" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baumans&family=Courgette&family=Raleway&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="profilepic"
+        src="images/profilepic.jpg"
+        alt="A profile picture of Evans Essoun"
+        width="120"
+        height="130"
+      />
+      <h1>Evans Frank Essoun</h1>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Chamber</a>
+      <a href="#">Site Plan</a>
+      <a href="#"> Form</a>
+    </nav>
+    <main>
+      <h2>WDD 23O: Web Frontend Development</h2>
+      <section class="card">
+        <h3>Learning Activities</h3>
+        <ul>
+          <li>
+            <label>Week 1: </label>
+            <a href="#">Layout</a> | <a href="#">Media Query</a> |
+            <a href="#">JS Pen</a>
+          </li>
+          <li><label>Week 2: </label><a href="#"></a></li>
+          <li><label>Week 3: </label><a href="#"></a></li>
+          <li><label>Week 4: </label><a href="#"></a></li>
+          <li><label>Week 5: </label><a href="#"></a></li>
+          <li><label>Week 6: </label><a href="#"></a></li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Information</h3>
+        <div class="info">
+          <p>Acrra, Ghana</p>
+          <p>
+            <img src="images/sunny2.png" alt="sun behind clouds" /><span
+              id="weather"
+              >23&deg;C - Sunny
+            </span>
+          </p>
+          <p>Page Visits:<span id="visits"></span></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <span id="year"></span> &nbsp; &nbsp; Evans Frank Essoun
+        <span id="country"
+          >Ghana <img src="images/Ghana-Waved-Flag-icon.png" alt="Ghana Flag"
+        /></span>
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+  </body>
+</html>
