@@ -1,0 +1,32 @@
+@media screen and (max-width: 800px) {
+  body {
+    margin: auto;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    width: 100vw;
+
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    width: 100vw;
+    font-size: 20px;
+  }
+  p {
+    min-width: 80vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20vh;
+  }
+  header img {
+    position: relative;
+  }
+}
