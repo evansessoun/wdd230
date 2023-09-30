@@ -1,4 +1,9 @@
 const pageVisit = document.querySelector("#visits");
+const hamButton = document.querySelector("#menu");
+const navbar = document.querySelector("#navbar");
+const themeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+const cards = document.querySelector(".card");
 
 let date = new Date();
 let year = date.getFullYear();
@@ -19,3 +24,14 @@ if (numVisits !== 0) {
 numVisits++;
 
 window.localStorage.setItem("numVisits-ls", numVisits);
+
+hamButton.addEventListener("click", () => {
+  hamButton.classList.toggle("open");
+  navbar.classList.toggle("show");
+});
+
+themeButton.addEventListener("click", () => {
+  themeButton.classList.toggle("activate");
+  main.classList.toggle("activate");
+  cards.classList.toggle("activate");
+});

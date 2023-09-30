@@ -1,8 +1,3 @@
-/** {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}*/
 header {
   display: flex;
   background-color: #336b91;
@@ -27,13 +22,7 @@ body {
   font-family: "Raleway", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
 }
-nav {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  margin-top: -40px;
-  background-color: #002952 /* #336b91 rgb(74, 117, 224)*/;
-}
+
 nav a {
   width: 100%;
 }
@@ -47,6 +36,7 @@ nav a {
   text-decoration: none;
   text-align: center;
   color: white;
+  z-index: 2;
 }
 nav a:hover {
   background-color: grey;
@@ -90,15 +80,16 @@ ul {
 }
 
 footer {
-  margin-top: 30px;
+  margin-bottom: 0px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 1fr;
-  height: 18vh;
+  min-height: 150px;
   background-color: #002952;
   align-items: center;
   color: white;
-  position: sticky;
+  position: relative;
+  bottom: 0rem;
 }
 
 footer span {
@@ -124,13 +115,15 @@ ul {
 
 .card a {
   color: rgb(13, 38, 225);
-  font-size: larger;
+  font-size: 18px;
   font-weight: bolder;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 2rem;
+  min-height: 60vh;
 }
 
 #country {
@@ -145,4 +138,73 @@ footer #lastModified {
   font-size: 2.5vw;
   font-weight: 200;
   justify-content: center;
+}
+
+#menu {
+  position: absolute;
+  right: 1rem;
+  top: 6rem;
+  font-size: x-large;
+  font-weight: bolder;
+  width: 50px;
+  color: #002952;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+#navbar {
+  display: none;
+}
+
+#navbar.show {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: #002952;
+}
+
+#mode {
+  position: absolute;
+  right: 1rem;
+  top: 10rem;
+  min-width: 80px;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#mode::before {
+  content: "Dark";
+  color: Black;
+}
+
+#mode.activate::before {
+  content: "Light";
+  color: black;
+  background-color: white;
+}
+
+main.activate {
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+}
+
+main.activate label {
+  color: white;
+}
+
+main.activate p {
+  color: white;
+}
+
+main.activate a {
+  color: white;
 }
