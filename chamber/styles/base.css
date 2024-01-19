@@ -76,3 +76,9 @@ main {
     font-size: 0.75rem;
   }
 }
+
+footer {
+  background: #336b91;
+  text-align: center;
+  color: white;
+}
