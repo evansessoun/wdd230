@@ -3,8 +3,11 @@
   padding: 0;
   margin: 0;
 }
-
-main img {
+body {
+  min-width: 250px;
+}
+#events img,
+#hero img {
   width: 100%;
   height: auto;
 }
@@ -51,6 +54,8 @@ nav {
 }
 nav a {
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
   color: white;
   text-decoration: none;
   padding-top: 1rem;
@@ -58,13 +63,128 @@ nav a {
 
 nav a:hover {
   background-color: #336b91;
+  color: gold;
 }
 
 main {
   justify-content: center;
-  padding: 1% 5%;
+}
+#reg-btn {
+  background-color: gold;
+  font-size: 2rem;
+  font-weight: 800;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: #002952;
+  position: absolute;
+  z-index: 1;
 }
 
+#reg-btn:hover {
+  background-color: #002952;
+  color: gold;
+  border: gold solid 5px;
+}
+
+#hero-msg {
+  background: rgba(255, 217, 0, 0.366);
+  color: #002952;
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: absolute;
+  margin-top: 150px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+#hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #002952;
+}
+
+footer {
+  background: #336b91;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+#events span {
+  display: block;
+  padding: 2rem;
+  margin: 2rem;
+  background: #336b91;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  border-radius: 1rem;
+  line-height: 1.5rem;
+}
+
+span img {
+  display: block;
+  margin: 20px auto;
+  max-width: 400px;
+  height: auto;
+}
+
+#events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.current {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem;
+}
+
+.weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #002952;
+  color: white;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.weather img {
+  display: block;
+  margin: 0 auto;
+}
+
+.spotlights {
+  background-color: gold;
+}
+
+#ham-button {
+  padding: 0.2rem;
+  font-size: 2rem;
+  width: 40px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+#ham-button::before {
+  content: "☰";
+}
+
+#ham-button.open::before {
+  content: "X";
+}
+
+#navbar {
+  display: none;
+}
+
+#navbar.show {
+  display: grid;
+}
 @media screen and (max-width: 470px) {
   header img {
     width: 25%;
@@ -75,10 +195,4 @@ main {
   header {
     font-size: 0.75rem;
   }
-}
-
-footer {
-  background: #336b91;
-  text-align: center;
-  color: white;
 }

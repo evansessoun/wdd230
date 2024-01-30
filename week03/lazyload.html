@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This site is a practice of the principle of lazyloading"
+    />
+    <meta name="author" content="Evans Frank Essoun" />
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="styles/lazyload.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lazy Loading Activity</h1>
+    </header>
+    <main>
+      <picture
+        ><img
+          src="images/sunflower.webp"
+          alt="A bright sunflower with a sky blue background"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="images/sunflower-dark.webp"
+          alt="A sunflower on a green field"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="images/sunset-on-flower.webp"
+          alt="A sunset view from a floral hill"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="images/sunset-over-river.webp"
+          alt="A sunset view from a lake side"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="images/moon.webp"
+          alt="Early moon appearance on a snowy hill"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="images/tree-in-arid.webp"
+          alt="A lone tree in a dry land with its roots showing"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+    </main>
+    <footer>
+      <div id="copyright"><p>&copy2023 Evans Frank Essoun</p></div>
+      <div>
+        <label>Last Modified: </label>
+        <p id="dated"></p>
+      </div>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+  </body>
+</html>

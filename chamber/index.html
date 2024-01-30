@@ -30,7 +30,8 @@
       <h1>Valley Rock</h1>
       <h4>Chamber of Commerce</h4>
     </header>
-    <nav>
+
+    <nav id="navbar">
       <a href="#">Home</a>
       <a href="#">Discover</a>
       <a href="#">Directory</a>
@@ -51,16 +52,17 @@
             height="750"
           />
         </picture>
-        <p>Welcome to the Valley Rock Chamber of Commerce</p>
         <button id="reg-btn">Register</button>
+        <p id="hero-msg">Welcome to the Valley Rock Chamber of Commerce</p>
       </div>
+      <button id="ham-button"></button>
       <section id="events">
         <span class="first">
           <h3>AgriHub Event</h3>
           <picture>
-            <source srcset="images/..." media="(max-width:500px)" />
-            <source srcset="images/..." media="(max-width:100px)" />
-            <img src="" alt="AgriHub Event Photo" />
+            <source srcset="images/plant.jpg" media="(max-width:500px)" />
+            <source srcset="images/plant.jpg" media="(max-width:100px)" />
+            <img src="images/plant.jpg" alt="AgriHub Event Photo" />
           </picture>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam
@@ -68,21 +70,24 @@
             recusandae dolorem aspernatur. Tempore soluta iusto expedita nam,
             praesentium similique dignissimos libero blanditiis quo explicabo
             mollitia saepe repellat, esse porro error. Corporis alias, similique
-            impedit hic quaerat ipsam dolore vel rem et quia reprehenderit
-            neque, assumenda reiciendis enim harum. Doloribus illo mollitia odio
-            vitae, voluptas quam dolores ipsa harum esse cum nemo. Laboriosam
-            totam optio quo non quod in suscipit obcaecati assumenda vitae,
-            fugiat, natus mollitia repudiandae tenetur? Dignissimos sequi
-            accusantium possimus libero tempora nam voluptatum iure illo,
-            inventore quaerat.
+            impedit hic quaerat ipsam dolore vel rem et quia reprehenderit.
           </p>
         </span>
         <span class="second">
           <h3>Enterprenuer's Corner</h3>
           <picture>
-            <source srcset="images/..." media="(max-width:500px)" />
-            <source srcset="images/..." media="(max-width:100px)" />
-            <img src="" alt="Enterprenuer's Corner Photo" />
+            <source
+              srcset="images/entrepreneur.jpeg"
+              media="(max-width:500px)"
+            />
+            <source
+              srcset="images/entrepreneur.jpeg"
+              media="(max-width:100px)"
+            />
+            <img
+              src="images/entrepreneur.jpeg"
+              alt="Enterprenuer's Corner Photo"
+            />
           </picture>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam
@@ -90,21 +95,15 @@
             recusandae dolorem aspernatur. Tempore soluta iusto expedita nam,
             praesentium similique dignissimos libero blanditiis quo explicabo
             mollitia saepe repellat, esse porro error. Corporis alias, similique
-            impedit hic quaerat ipsam dolore vel rem et quia reprehenderit
-            neque, assumenda reiciendis enim harum. Doloribus illo mollitia odio
-            vitae, voluptas quam dolores ipsa harum esse cum nemo. Laboriosam
-            totam optio quo non quod in suscipit obcaecati assumenda vitae,
-            fugiat, natus mollitia repudiandae tenetur? Dignissimos sequi
-            accusantium possimus libero tempora nam voluptatum iure illo,
-            inventore quaerat.
+            impedit hic quaerat ipsam dolore vel rem et quia reprehenderit.
           </p>
         </span>
         <span class="third">
           <h3>TechHub Event</h3>
           <picture>
-            <source srcset="images/..." media="(max-width:500px)" />
-            <source srcset="images/..." media="(max-width:100px)" />
-            <img src="" alt="TechHub Event Photo" />
+            <source srcset="images/tech.jpg" media="(max-width:500px)" />
+            <source srcset="images/tech.jpg" media="(max-width:100px)" />
+            <img src="images/tech.jpg" alt="TechHub Event Photo" />
           </picture>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam
@@ -113,31 +112,45 @@
             praesentium similique dignissimos libero blanditiis quo explicabo
             mollitia saepe repellat, esse porro error. Corporis alias, similique
             impedit hic quaerat ipsam dolore vel rem et quia reprehenderit
-            neque, assumenda reiciendis enim harum. Doloribus illo mollitia odio
-            vitae, voluptas quam dolores ipsa harum esse cum nemo. Laboriosam
-            totam optio quo non quod in suscipit obcaecati assumenda vitae,
-            fugiat, natus mollitia repudiandae tenetur? Dignissimos sequi
-            accusantium possimus libero tempora nam voluptatum iure illo,
-            inventore quaerat.
+            neque, assumenda reiciendis enim harum. Doloribus illo mollitia
+            odio.
           </p>
         </span>
       </section>
-      <section id="weather"></section>
-      <section id="spotlights">
-        <span class="spotfirst">
-          <picture>
-            <source srcset="" media="(max-width:500px)" />
-            <source srcset="" media="(max-width:1000px)" />
-          </picture>
-        </span>
-        <span class="spotsecond"></span>
-      </section>
+      <div class="current">
+        <section class="weather">
+          <h3>Weather</h3>
+          <div id="info">
+            <p>Acrra, Ghana</p>
+            <p>
+              <img
+                src="images/sunny2.png"
+                alt="sun behind clouds"
+                width="50"
+                height="50"
+              /><span id="weather">23&deg;C - Sunny </span>
+            </p>
+        </section>
+        <section class="spotlights">
+          <h3>Spotlights</h3>
+          <p>7th Tech Conference - Valley Rock Province</p>
+          <span id="spotfirst">
+            <picture>
+              <source srcset="" media="(max-width:500px)" />
+              <source srcset="" media="(max-width:1000px)" />
+              <img src="images/tech-conference.jpg"/>
+            </picture>
+          </span>
+          <span id="spotsecond"></span>
+        </section>
+      </div>
     </main>
     <footer>
       <div><span>E-mail: essoun.evans@gmail.com</span> Evans Frank Essoun</div>
       <div>
-        <span>WDD 230 &copy; 2023</span> <span id="lastModified"></span>
+        <span>WDD 230 &copy; 2024</span> <span id="lastModified"></span>
       </div>
     </footer>
+    <script src="scripts/chamber.js"></script>
   </body>
 </html>
