@@ -112,7 +112,7 @@ footer {
   padding: 2rem;
 }
 
-#events span {
+#events div {
   display: block;
   padding: 2rem;
   margin: 2rem;
@@ -190,7 +190,6 @@ span img {
     width: 25%;
     height: auto;
     align-items: center;
-    padding: auto 0;
   }
   header {
     font-size: 0.75rem;

@@ -26,7 +26,7 @@
     height: auto;
   }
 
-  #events span {
+  #events div {
     display: block;
     background: #336b91;
     color: white;
@@ -39,7 +39,7 @@
     display: none;
   }
 
-  #events span img {
+  #events div img {
     max-width: 400px;
     height: auto;
   }
@@ -49,7 +49,7 @@
     flex-wrap: nowrap;
   }
 
-  #events span p {
+  #events div p {
     max-width: 600px;
   }
 
@@ -60,7 +60,7 @@
       justify-content: center;
     }
 
-    #events span {
+    #events div {
       display: grid;
       gap: 10px;
     }
