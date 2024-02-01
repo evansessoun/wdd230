@@ -9,12 +9,35 @@ header {
   height: 100%;
   z-index: 3;
 }
+#hero img {
+  width: 100%;
+  height: auto;
+}
+#hero {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-label {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  justify-content: center;
+  background-color: #6fabeb95;
+}
+
+#banner-label h2 {
+  text-align: center;
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Baumans", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
   font-size: 35px;
 }
-h2 {
+#page h2 {
   border-bottom: 0.2vh solid gray;
   text-align: center;
 }
@@ -119,7 +142,7 @@ ul {
   font-weight: bolder;
 }
 
-main {
+main #page {
   display: grid;
   grid-template-columns: 1fr;
   padding: 2rem;

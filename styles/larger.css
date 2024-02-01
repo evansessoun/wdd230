@@ -30,7 +30,7 @@
     font-size: 3vh;
     background-color: #002952;
   }
-  main {
+  main #page {
     display: grid;
     padding: 1vh 12vh;
     align-items: center;

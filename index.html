@@ -46,51 +46,62 @@
       <a href="#"> Form</a>
     </nav>
     <main>
-      <button id="mode"></button>
-      <h2>WDD 23O: Web Frontend Development</h2>
-      <section class="card">
-        <h3>Learning Activities</h3>
-        <ul>
-          <li>
-            <label>Week 1: </label>
-            <a href="#">Layout</a> | <a href="#">Media Query</a> |
-            <a href="#">JS Pen</a>
-          </li>
-          <li>
-            <label>Week 2: </label
-            ><a href="week02/design.html">Web Design Priciples</a> |
-            <a href="https://codepen.io/evansessoun/pen/MWZVvpE"
-              >Responsive Navigation</a
-            >
-            | <a href="week02/bom.html">Book of Mormon App</a>
-          </li>
-          <li>
-            <label>Week 3: </label
-            ><a href="week03/images/landscape.webp">WebP</a> |
-            <a href="week03/lazyload.html">Lazy Loading</a> |
-            <a href="week03/responsive-images.html">Responsive Images</a> |
-            <a href="week03/bom.html">Book of Mormon API localStorage</a>
-          </li>
-          <li><label>Week 4: </label><a href="#"></a></li>
-          <li><label>Week 5: </label><a href="#"></a></li>
-          <li><label>Week 6: </label><a href="#"></a></li>
-        </ul>
-      </section>
-      <section class="card">
-        <h3>Information</h3>
-        <div class="info">
-          <p>Acrra, Ghana</p>
-          <p>
-            <img
-              src="images/sunny2.png"
-              alt="sun behind clouds"
-              width="50"
-              height="50"
-            /><span id="weather">23&deg;C - Sunny </span>
-          </p>
-          <p>Page Visits:<span id="visits"></span></p>
+      <div id="hero">
+        <picture>
+          <source srcset="images/hero-medium.webp" media="(max-width:700px)" />
+          <img src="images/hero-large.webp" alt="Ghana Accra Temple" />
+        </picture>
+        <div id="banner-label">
+          <h2>Ghana Accra Temple</h2>
         </div>
-      </section>
+      </div>
+      <div id="page">
+        <button id="mode"></button>
+        <h2>WDD 23O: Web Frontend Development</h2>
+        <section class="card">
+          <h3>Learning Activities</h3>
+          <ul>
+            <li>
+              <label>Week 1: </label>
+              <a href="#">Layout</a> | <a href="#">Media Query</a> |
+              <a href="#">JS Pen</a>
+            </li>
+            <li>
+              <label>Week 2: </label
+              ><a href="week02/design.html">Web Design Priciples</a> |
+              <a href="https://codepen.io/evansessoun/pen/MWZVvpE"
+                >Responsive Navigation</a
+              >
+              | <a href="week02/bom.html">Book of Mormon App</a>
+            </li>
+            <li>
+              <label>Week 3: </label
+              ><a href="week03/images/landscape.webp">WebP</a> |
+              <a href="week03/lazyload.html">Lazy Loading</a> |
+              <a href="week03/responsive-images.html">Responsive Images</a> |
+              <a href="week03/bom.html">localStorage</a>
+            </li>
+            <li><label>Week 4: </label><a href="#"></a></li>
+            <li><label>Week 5: </label><a href="#"></a></li>
+            <li><label>Week 6: </label><a href="#"></a></li>
+          </ul>
+        </section>
+        <section class="card">
+          <h3>Information</h3>
+          <div class="info">
+            <p>Acrra, Ghana</p>
+            <p>
+              <img
+                src="images/sunny2.png"
+                alt="sun behind clouds"
+                width="50"
+                height="50"
+              /><span id="weather">23&deg;C - Sunny </span>
+            </p>
+            <p>Page Visits:<span id="visits"></span></p>
+          </div>
+        </section>
+      </div>
     </main>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13366.304773958556!2d-1.2848104035106933!3d5.131678892892223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfddfc29c7b3faad%3A0xeae5bdfb8639e093!2sCape%20Coast%2C%20Ghana!5e0!3m2!1sen!2sus!4v1701875490512!5m2!1sen!2sus"
@@ -109,6 +120,7 @@
           <img
             src="images/Ghana-Waved-Flag-icon.png"
             alt="Ghana Flag"
+            loading="lazy"
             width="50"
             height="50"
         /></span>
