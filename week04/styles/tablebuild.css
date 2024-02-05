@@ -1,0 +1,54 @@
+/* table {
+  width: 600px;
+  height: 200px;
+}
+ */
+
+p {
+  text-align: center;
+  width: 600px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #002952;
+  margin-bottom: 0;
+  font-size: 2rem;
+  color: wheat;
+  padding: 1.2rem 0;
+  height: 30px;
+}
+
+table,
+th,
+td {
+  border: solid 1px #002952;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table {
+  width: 600px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+th,
+td {
+  height: 50px;
+}
+tr:nth-child(odd) {
+  background-color: #a3d4f4a4;
+}
+th {
+  background-color: #002952;
+  color: white;
+  font-size: 1.5rem;
+}
+tr:odd-rows {
+  color: blue;
+}
+
+tr td:first-child {
+  font-size: 1.5rem;
+}
+
+caption {
+  caption-side: bottom;
+  padding-top: 2rem;
+}

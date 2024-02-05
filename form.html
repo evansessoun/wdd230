@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evans Frank Essoun - WDD 230 - Web Frontend Development</title>
+    <meta
+      name="description"
+      content="A course assignment portal for WDD 230 - Web Frontend Development created by Evans Frank Essoun"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="author" content="Evans Frank Essoun" />
+    <meta
+      property="og:title"
+      content="Evans Frank Essoun - WDD 230 -Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/cape-coast.jpg" />
+    <meta property="og:url" content="https://evansessoun.github.io/wdd230/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Baumans&family=Courgette&family=Raleway&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="profilepic"
+        src="images/profilepic.jpg"
+        alt="A profile picture of Evans Essoun"
+        width="120"
+        height="130"
+      />
+      <h1>Evans Frank Essoun</h1>
+      <button id="menu"></button>
+    </header>
+    <nav id="navbar">
+      <a href="#">Home</a>
+      <a href="chamber/index.html">Chamber</a>
+      <a href="week01/chamber-site-plan.html">Site Plan</a>
+      <a href="#"> Form</a>
+    </nav>
+    <main>
+      <p id="requirement">* indicates a required field</p>
+      <h2 id="reviewheader">WDD230 Course Page Review</h2>
+
+      <form method="get" action="record.html">
+        <fieldset>
+          <legend>User Info</legend>
+          <label class="top"
+            >Username*
+            <input type="text" name="username" id="username" required
+          /></label>
+          <label class="top"
+            >Password*
+            <input
+              type="password"
+              name="password1"
+              id="password1"
+              required
+              pattern="[a-zA-Z0-9]{8,20}"
+          /></label>
+          <label class="top"
+            >Repeat Password*
+            <input
+              type="password"
+              name="password2"
+              id="password2"
+              required
+              pattern="[a-zA-Z0-9]{8,20}"
+          /></label>
+          <label><p id="warning">Passwords DO NOT MATCH</p></label>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              title="Please enter a valid email address"
+              placeholder="someone@byui.edu"
+              pattern="^(?=.*byui)(?=.*edu$)(?=.*\w)(?=.*[@])[A-Za-z\d!@#$_%^&*.]{5,30}$"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Site Review</legend>
+          <label class="top"
+            >Page Rating
+            <!-- This is Experimental -->
+            <span id="rate-display" width="100px">0</span>
+            <input
+              type="range"
+              name="rating"
+              id="rating"
+              min="0"
+              max="10"
+              step="1"
+            />
+          </label>
+        </fieldset>
+        <button class="submitBtn" type="submit" id="submit">Send Review</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        <span id="year"></span> &nbsp; &nbsp; Evans Frank Essoun
+        <span id="country"
+          >Ghana
+          <img
+            src="images/Ghana-Waved-Flag-icon.png"
+            alt="Ghana Flag"
+            loading="lazy"
+            width="50"
+            height="50"
+        /></span>
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/formvalidation.js"></script>
+    <script src="scripts/getDates.js"></script>
+  </body>
+</html>

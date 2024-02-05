@@ -1,0 +1,108 @@
+:root {
+  --fieldset-padding: 2rem 0 0.8rem 2rem; /* padding value for field set */
+  --fieldset-bordradius: 10px; /* border-radius value for fieldset */
+  --input-bordradius: 5px; /* border-radius value for input */
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+main #reviewheader {
+  margin-top: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(25, 118, 224);
+  color: white;
+  line-height: 100px;
+}
+/* Working on here */
+main #requirement {
+  margin-top: 0;
+  display: block;
+  text-align: right;
+  width: 100%;
+  color: rgb(159, 5, 64);
+  font: 2rem;
+}
+
+fieldset {
+  padding: var(--fieldset-padding);
+  margin-bottom: 20px;
+  border-radius: var(--fieldset-bordradius);
+  width: 60vw;
+  border: solid 2px rgb(25, 118, 224);
+  font-size: 1.2rem;
+}
+
+form legend {
+  font-size: 1.5rem;
+  color: rgb(9, 88, 179);
+  font-weight: 800;
+}
+
+form label.top {
+  display: block;
+  margin-bottom: 20px;
+}
+
+form label.top input {
+  display: block;
+  border-radius: var(--input-bordradius);
+  padding: 0.5rem 2rem;
+  background-color: #d9d4d4c8;
+  border-left: solid 6px red;
+}
+
+form label.top input:valid {
+  border-left: solid 6px rgb(4, 221, 4);
+}
+
+form #warning {
+  background-color: rgb(236, 74, 136);
+  color: white;
+  font-weight: 800;
+  width: 16.5rem;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 10px;
+  /*  visibility: hidden; */
+  display: none;
+}
+
+#warning.show {
+  visibility: visible;
+}
+
+form .submitBtn {
+  display: block;
+  background-color: rgb(25, 118, 224);
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  width: 60%;
+  border-radius: var(--fieldset-bordradius);
+  border-color: #002952;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#rate-display {
+  margin-left: 80px;
+  font-size: 2rem;
+  color: rgb(25, 118, 224);
+}
+
+#recorded {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #002952;
+  height: 45vh;
+}
