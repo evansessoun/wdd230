@@ -387,6 +387,11 @@ form #submit:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   min-height: 300px;
 }
+
+#timestamp {
+  display: none;
+}
+
 @media screen and (max-width: 470px) {
   header img {
     width: 25%;
