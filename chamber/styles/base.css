@@ -253,7 +253,140 @@ span img {
 #calender-frame {
   width: 100%;
 }
+/* MAIN AREA for Join Page */
+#join-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #336b91;
+  color: white;
+  font-size: 2.3rem;
+  width: 80%;
+  height: 120px;
+}
 
+.top,
+.sbs {
+  display: block;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+}
+.top input {
+  display: block;
+  padding: 0.8rem 1rem;
+  width: 350px;
+  border: solid 1px #002952;
+  background-color: #dfdfdf30;
+  border-radius: 5px;
+}
+
+.top input:required {
+  border-left: solid 6px red;
+}
+
+.top input:required:valid {
+  border-left: solid 6px rgb(53, 251, 53);
+}
+
+.sbs input {
+  margin-right: 10px;
+}
+
+fieldset {
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px 10px;
+  border-color: #4a9ff3;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4a9ff3;
+}
+
+form #submit {
+  display: block;
+  width: 400px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: #336b91;
+  color: white;
+}
+
+form #submit:hover {
+  background-color: gold;
+  color: #336b91;
+}
+
+#requirement {
+  text-align: right;
+  width: 80%;
+  font-size: 1.2rem;
+  color: red;
+  margin: 0 auto;
+}
+
+.top textarea {
+  display: block;
+  width: 350px;
+  height: 150px;
+  font-size: 1.2rem;
+  background-color: #dfdfdf30;
+}
+
+/* Take Note */
+#mem-benefit {
+  background-color: wheat;
+  width: 80%;
+  height: fit-content;
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+#mem-benefit h3 {
+  font-size: 30px;
+}
+
+.benefit-info {
+  background-color: #4a9ff3ae;
+  margin-top: 20px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.benefit-info:nth-of-type(2) {
+  background-color: #d48b41;
+}
+.benefit-info:nth-of-type(3) {
+  background-color: #c0c0c0;
+}
+
+.benefit-info:nth-of-type(4) {
+  background-color: gold;
+}
+#membership-granted {
+  grid-column: 1/3;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 2rem;
+  line-height: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 300px;
+}
 @media screen and (max-width: 470px) {
   header img {
     width: 25%;

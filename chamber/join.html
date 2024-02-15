@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Valley Rock Chamber of Commerce" />
+    <meta
+      name="description"
+      content="A place where the people of Valley Rock grow their businesses and their community. This site provide enterprenuers to participate in forums, share resources and create a network of businesses patners which can tremendously foster growth."
+    />
+    <meta name="author" content="Evans Frank Essoun" />
+    <meta property="og:title" content="Valley Rock Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/cape-coast.jpg" />
+    <meta property="og:url" content="#" />
+    <title>Valley Rock Chamber of Commerce</title>
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/rock-valley-logo.png"
+        alt="Valley Rock logo"
+        width="150"
+      />
+
+      <h1>Valley Rock</h1>
+      <h4>Chamber of Commerce</h4>
+    </header>
+
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="#">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+    <main id="join">
+      <!-- Don't forget to create the thankyou.html file -->
+      <h2 id="join-heading">Grab Your Membership</h2>
+      <p id="requirement">*indicates a required field</p>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Members Identity</legend>
+          <label class="top"
+            >First Name*
+            <input type="text" name="first-name" id="first-name" required
+          /></label>
+          <label class="top"
+            >Last Name*
+            <input type="text" name="last-name" id="last-name" required
+          /></label>
+          <label class="top"
+            >Job Title
+            <input
+              type="text"
+              name="job-title"
+              id="job-title"
+              pattern="^[A-Za-z\d\s_]{7,30}$"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="somebody@gmail.com"
+          /></label>
+          <label class="top"
+            >Phone*
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              placeholder="0001112222"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Business Info</legend>
+          <label class="top"
+            >Business Name*
+            <input type="text" name="bus-name" id="bus-name" required
+          /></label>
+          <label class="top"
+            >Business Description
+            <textarea name="bus-description" id="bus-description"></textarea>
+          </label>
+          <label><input type="time" name="timestamp" id="timestamp" /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership Level</legend>
+          <label class="sbs"
+            ><input type="radio" name="membership" id="non-profit" /> Non-Profit
+            Membership</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="membership" id="bronze" /> Bronze
+            Membership</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="membership" id="silver" /> Silver
+            Membership</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="membership" id="gold" /> Gold
+            Membership</label
+          >
+        </fieldset>
+        <label
+          ><input type="submit" value="Request Membership" id="submit"
+        /></label>
+      </form>
+      <div id="mem-benefit">
+        <h3>Member Benefits</h3>
+        <div class="benefit-info">
+          <h3>Non-Profit</h3>
+          <p>
+            ☑️special events <br />
+            Cost: Free
+          </p>
+        </div>
+        <div class="benefit-info">
+          <h3>Bronze</h3>
+          <p>
+            ☑️special events <br />
+            ☑️Human Resource trainings <br />
+            Cost: $10 Monthly
+          </p>
+        </div>
+        <div class="benefit-info">
+          <h3>Silver</h3>
+          <p>
+            ☑️special events<br />
+            ☑️Human Resource trainings<br />
+            ☑️Advertising Space on Chamber's spotlights <br />
+            Cost: $20 Monthly
+          </p>
+        </div>
+        <div class="benefit-info">
+          <h3>Gold</h3>
+          <p>
+            ☑️special events <br />
+            ☑️Human Resource trainings<br />
+            ☑️Advertising Space on Chamber's spotlights<br />
+            ☑️Annual Career Event discounts <br />
+            Cost: $30 Monthly
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div><span>E-mail: essoun.evans@gmail.com</span> Evans Frank Essoun</div>
+      <div>
+        <span>WDD 230 &copy; 2024</span> <span id="lastModified"></span>
+      </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+  </body>
+</html>
