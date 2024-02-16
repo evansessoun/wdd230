@@ -1,0 +1,73 @@
+{
+  "families": [
+    {
+      "familyName": "Essoun",
+      "dateMoved": "14-02-2023",
+      "numberOfRecords": 3,
+      "bishopricVisit": true,
+      "members": [
+        {
+          "name": "Evans Essoun",
+          "gender": "male",
+          "birthdate": "16-04-1994"
+        },
+        {
+          "name": "Sophia Essoun",
+          "gender": "female",
+          "birthdate": "11-07-1997"
+        },
+        {
+          "name": "Kelvin Essoun",
+          "gender": "male",
+          "birthdate": "13-12-2021"
+        }
+      ]
+    },
+    {
+      "familyName": "Blankson",
+      "dateMoved": "05-10-2019",
+      "numberOfRecords": 4,
+      "bishopricVisit": true,
+      "members": [
+        {
+          "name": "James Blankson",
+          "gender": "male",
+          "birthdate": "21-03-1994"
+        },
+        {
+          "name": "Patricia Blankson",
+          "gender": "female",
+          "birthdate": "03-09-1997"
+        },
+        {
+          "name": "Emerald Blankson",
+          "gender": "female",
+          "birthdate": "10-09-2021"
+        },
+        {
+          "name": "Sterlyn Blankson",
+          "gender": "male",
+          "birthdate": "03-04-2023"
+        }
+      ]
+    },
+    {
+      "familyName": "Forson",
+      "dateMoved": "08-05-2023",
+      "numberOfRecords": 2,
+      "bishopricVisit": false,
+      "members": [
+        {
+          "name": "Thomas Forson",
+          "gender": "male",
+          "birthdate": "21-07-1975"
+        },
+        {
+          "name": "Veronica Forson",
+          "gender": "female",
+          "birthdate": "13-08-1980"
+        }
+      ]
+    }
+  ]
+}

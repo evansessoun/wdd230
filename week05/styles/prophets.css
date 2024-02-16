@@ -1,0 +1,55 @@
+main {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  min-width: 350px;
+  background-color: rgba(110, 36, 180, 0.76);
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+section {
+  background-color: antiquewhite;
+  margin: 10px;
+  min-width: 250px;
+  display: block;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+h1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  background-color: rgb(72, 100, 214);
+  color: white;
+}
+
+header {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+section img {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid rgb(72, 23, 117);
+  box-shadow: 0 0 30px rgba(102, 30, 169, 0.926);
+}
+
+body {
+  margin: 0;
+}
