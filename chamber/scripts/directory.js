@@ -27,7 +27,10 @@ function displayCard(companies) {
     const compName = company.name;
     console.log(compName);
     const compImage = document.createElement("img");
-    compImage.setAttribute("src", `${company.icon}`);
+    compImage.setAttribute(
+      "src",
+      `https://evansessoun.github.io/wdd230/chamber/images/${company.icon}`
+    );
     display.appendChild(compImage);
   });
 }

@@ -5,7 +5,7 @@
       "address": "Silent Street,Cape Coast",
       "phone number": "0545908944",
       "website URL": "https://www.itsmarta.com",
-      "icon": "./images/marta.png",
+      "icon": "marta.png",
       "membership": "Gold",
       "services": "Transport for Agri goods"
     },
@@ -14,7 +14,7 @@
       "address": "Green Hill,Cape Coast",
       "phone number": "0545234233",
       "website URL": "https://roundup.com",
-      "icon": "./images/roundup.png",
+      "icon": "roundup.png",
       "membership": "Bronze",
       "services": "Manufacture herbicides"
     },
@@ -23,7 +23,7 @@
       "address": "Third Ridge,Abura",
       "phone number": "0234254654",
       "website URL": "https://www.techinthebasket.com",
-      "icon": "./images/techinthebasket.png",
+      "icon": "techinthebasket.png",
       "membership": "Silver",
       "services": "Supplies tech gadgets"
     },
@@ -32,7 +32,7 @@
       "address": "Peace Avenue,Cape Coast",
       "phone number": "0546266414",
       "website URL": "https://www.globus-baumarkt.de",
-      "icon": "./images/globus.png",
+      "icon": "globus.png",
       "membership": "Gold",
       "services": "Online Market"
     },
@@ -41,7 +41,7 @@
       "address": "Twilight Avenue,Cape Coast",
       "phone number": "0545908944",
       "website URL": "https://www.carrefour.com",
-      "icon": "./images/carrefour.png",
+      "icon": "carrefour.png",
       "membership": "Gold",
       "services": "Sells groceries and agriproducts"
     },
@@ -50,7 +50,7 @@
       "address": "Valley street,Saltpond",
       "phone number": "0234235944",
       "website URL": "https://bolt.eu",
-      "icon": "./images/bolt.png",
+      "icon": "bolt.png",
       "membership": "Non-profit",
       "services": "Goods and tranportation services"
     },
@@ -59,7 +59,7 @@
       "address": "Ola ,Cape Coast",
       "phone number": "0532543453",
       "website URL": "https://www.agribank.com.vn",
-      "icon": "./images/agribank.png",
+      "icon": "agribank.png",
       "membership": "Gold",
       "services": "Finances agri businesses"
     },
@@ -68,7 +68,7 @@
       "address": "Ola ,Cape Coast",
       "phone number": "0532543453",
       "website URL": "https://www.westernunion.com",
-      "icon": "./images/western-union.png",
+      "icon": "western-union.png",
       "membership": "Gold",
       "services": "Finance businesses"
     }
