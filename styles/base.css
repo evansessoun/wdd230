@@ -237,3 +237,16 @@ main.activate p {
 main.activate a {
   color: white;
 }
+
+#weather-icon {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
