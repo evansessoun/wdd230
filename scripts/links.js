@@ -8,7 +8,7 @@ async function getLinks() {
   try {
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
+      displayLinks(data);
     } else {
       throw Error(await response.text());
     }
@@ -28,7 +28,7 @@ function displayLinks(data) {
     const list = document.createElement("li");
     const weekLinks = weekNo.links;
     const weekLabel = document.createElement("label");
-    weekLabel.textContent = `${weekName}`;
+    weekLabel.textContent = `${weekName}: `;
     list.appendChild(weekLabel);
     weekLinks.forEach((link) => {
       let activitURL = link.url;
@@ -37,8 +37,11 @@ function displayLinks(data) {
       linker.textContent = `${activityName}`;
       linker.setAttribute("href", `${activitURL}`);
       list.appendChild(linker);
+      list.append(" | ");
     });
     ulList.appendChild(list);
     activityCard.appendChild(ulList);
   });
 }
+
+getLinks();
