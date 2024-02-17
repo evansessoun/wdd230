@@ -27,10 +27,21 @@ function displayCard(companies) {
     const compName = company.name;
     console.log(compName);
     const compImage = document.createElement("img");
+    const card = document.createElement("section");
     compImage.setAttribute(
       "src",
       `https://evansessoun.github.io/wdd230/chamber/images/${company.icon}`
     );
-    display.appendChild(compImage);
+    const address = document.createElement("p");
+    address.textContent = `${company.address}`;
+    const phone = document.createElement("p");
+    phone.textContent = `${company.phone}`;
+    const website = document.createElement("a");
+    website.setAttribute("href", `${company.websiteURL}`);
+    card.appendChild(compImage);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
+    display.appendChild(card);
   });
 }

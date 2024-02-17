@@ -3,8 +3,8 @@
     {
       "name": "Marta",
       "address": "Silent Street,Cape Coast",
-      "phone number": "0545908944",
-      "website URL": "https://www.itsmarta.com",
+      "phone": "0545908944",
+      "websiteURL": "https://www.itsmarta.com",
       "icon": "marta.png",
       "membership": "Gold",
       "services": "Transport for Agri goods"
@@ -12,8 +12,8 @@
     {
       "name": "Roundup",
       "address": "Green Hill,Cape Coast",
-      "phone number": "0545234233",
-      "website URL": "https://roundup.com",
+      "phone": "0545234233",
+      "websiteURL": "https://roundup.com",
       "icon": "roundup.png",
       "membership": "Bronze",
       "services": "Manufacture herbicides"
@@ -21,8 +21,8 @@
     {
       "name": "Techinthebasket",
       "address": "Third Ridge,Abura",
-      "phone number": "0234254654",
-      "website URL": "https://www.techinthebasket.com",
+      "phone": "0234254654",
+      "websiteURL": "https://www.techinthebasket.com",
       "icon": "techinthebasket.png",
       "membership": "Silver",
       "services": "Supplies tech gadgets"
@@ -30,8 +30,8 @@
     {
       "name": "Globus",
       "address": "Peace Avenue,Cape Coast",
-      "phone number": "0546266414",
-      "website URL": "https://www.globus-baumarkt.de",
+      "phone": "0546266414",
+      "websiteURL": "https://www.globus-baumarkt.de",
       "icon": "globus.png",
       "membership": "Gold",
       "services": "Online Market"
@@ -39,8 +39,8 @@
     {
       "name": "Carrefour",
       "address": "Twilight Avenue,Cape Coast",
-      "phone number": "0545908944",
-      "website URL": "https://www.carrefour.com",
+      "phone": "0545908944",
+      "websiteURL": "https://www.carrefour.com",
       "icon": "carrefour.png",
       "membership": "Gold",
       "services": "Sells groceries and agriproducts"
@@ -48,8 +48,8 @@
     {
       "name": "Bolt",
       "address": "Valley street,Saltpond",
-      "phone number": "0234235944",
-      "website URL": "https://bolt.eu",
+      "phone": "0234235944",
+      "websiteURL": "https://bolt.eu",
       "icon": "bolt.png",
       "membership": "Non-profit",
       "services": "Goods and tranportation services"
@@ -57,8 +57,8 @@
     {
       "name": "Agribank",
       "address": "Ola ,Cape Coast",
-      "phone number": "0532543453",
-      "website URL": "https://www.agribank.com.vn",
+      "phone": "0532543453",
+      "websiteURL": "https://www.agribank.com.vn",
       "icon": "agribank.png",
       "membership": "Gold",
       "services": "Finances agri businesses"
@@ -66,8 +66,8 @@
     {
       "name": "Western Union",
       "address": "Ola ,Cape Coast",
-      "phone number": "0532543453",
-      "website URL": "https://www.westernunion.com",
+      "phone": "0532543453",
+      "websiteURL": "https://www.westernunion.com",
       "icon": "western-union.png",
       "membership": "Gold",
       "services": "Finance businesses"
