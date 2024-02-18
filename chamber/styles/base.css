@@ -4,7 +4,7 @@
   margin: 0;
 }
 body {
-  min-width: 250px;
+  min-width: 320px;
 }
 #events img,
 #hero img {
@@ -69,6 +69,11 @@ nav a:hover {
 main {
   justify-content: center;
 }
+#reg-btn a {
+  text-decoration: none;
+  color: white;
+}
+
 #reg-btn {
   background-color: gold;
   font-size: 2rem;
@@ -215,7 +220,7 @@ span img {
   font-size: 2rem;
 }
 #sidebar {
-  background-color: #b26c40d7 /* #336b91 */;
+  background-color: #b26c40d7;
   padding: 20px;
 }
 #sidebar section {
@@ -341,7 +346,6 @@ form #submit:hover {
   background-color: #dfdfdf30;
 }
 
-/* Take Note */
 #mem-benefit {
   background-color: wheat;
   width: 80%;
@@ -390,6 +394,88 @@ form #submit:hover {
 
 #timestamp {
   display: none;
+}
+
+/* Chamber Directory Page */
+.display-directory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.display-directory section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 50px;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #333;
+}
+
+.display-directory section img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.display-directory section div {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#buttons {
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 90%;
+}
+
+#buttons button:hover {
+  background-color: rgba(239, 137, 100, 0.725);
+}
+
+#grid {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  right: 115px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-width: 4px;
+  box-shadow: 0 0 10px #333;
+}
+#list {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-width: 4px;
+  box-shadow: 0 0 10px #333;
+}
+
+.large {
+  visibility: collapse;
+}
+.small {
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 1.4rem;
+}
+
+tr:nth-child(odd) {
+  background-color: #89c1f9;
 }
 
 @media screen and (max-width: 470px) {

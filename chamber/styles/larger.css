@@ -119,6 +119,18 @@
     background-color: gold;
   }
 
+  /* Chamber Directory */
+  .large {
+    visibility: visible;
+    font-size: 1.2rem;
+    height: 400px;
+    width: 80%;
+    margin: 50px auto;
+  }
+  .small {
+    visibility: collapse;
+  }
+
   @media screen and (max-width: 1200px) {
     #events {
       display: grid;
