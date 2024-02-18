@@ -48,6 +48,7 @@
             width="1500"
             height="750" />
         </picture>
+        <p id="meeting-banner">Join Chamber of commerce meet and greet @ 7PM</p>
         <button id="reg-btn"><a href="join.html">Register</a></button>
         <p id="hero-msg">Welcome to the Valley Rock Chamber of Commerce</p>
       </div>
@@ -112,34 +113,19 @@
       </section>
       <div class="current">
         <section class="weather">
-          <h3>Weather</h3>
           <div id="info">
-            <p>Acrra, Ghana</p>
-            <img
-              src="images/sunny2.png"
-              alt="sun behind clouds"
-              width="50"
-              height="50" />
-            <span id="weather">23&deg;C - Sunny </span>
+            <p id="location"></p>
+            <img id="weather-icon" src="#" alt="#" width="70" height="70" />
+            <span id="weather"></span>
+          </div>
+          <div id="casted">
+            <h3>5 Days Weather Forecast</h3>
+            <div id="scrolltable"></div>
           </div>
         </section>
         <section class="spotlights">
           <h3>Spotlights</h3>
           <p>7th Tech Conference - Valley Rock Province</p>
-          <span id="spotfirst">
-            <picture>
-              <source
-                srcset="images/tech-conference-medium.webp"
-                media="(max-width:500px)" />
-              <source
-                srcset="images/tech-conference-medium.webp"
-                media="(max-width:1000px)" />
-              <img
-                src="images/tech-conference-medium.webp"
-                alt="Valley rock Tech conference" />
-            </picture>
-          </span>
-          <span id="spotsecond"></span>
         </section>
       </div>
     </main>
@@ -150,5 +136,6 @@
       </div>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/directory.js"></script>
   </body>
 </html>

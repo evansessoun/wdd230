@@ -131,6 +131,13 @@
     visibility: collapse;
   }
 
+  .spotlights {
+    grid-template-columns: 1fr 1fr;
+  }
+  .weather {
+    grid-template-columns: 2fr 3fr;
+  }
+
   @media screen and (max-width: 1200px) {
     #events {
       display: grid;

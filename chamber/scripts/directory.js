@@ -2,14 +2,17 @@ const baseURL = "https://evansessoun.github.io/wdd230/";
 const membersURL =
   "https://evansessoun.github.io/wdd230/chamber/data/members.json";
 
-const main = document.querySelector("main");
+const main = document.querySelector("#main-directory");
 const gridbtn = document.querySelector("#grid");
 const listbtn = document.querySelector("#list");
 const table = document.createElement("table");
+const spotlight = document.querySelector(".spotlights");
 const tableSmall = document.createElement("table");
 const page = document.createElement("div");
 table.classList.add("large");
 tableSmall.classList.add("small");
+
+const advertise = [];
 
 async function fetchAPI() {
   try {
@@ -63,6 +66,9 @@ function displayCard(companies) {
     info.appendChild(website);
     card.appendChild(info);
     info.innerHTML += "";
+    if (company.membership == "Silver" || company.membership == "Gold") {
+      advertise.push(card);
+    }
 
     /* infoTR is used to build table row for small screen table */
     const infoTr = info.prepend(name);
@@ -86,10 +92,20 @@ function displayCard(companies) {
     tbodySmall.appendChild(trSmall);
     page.appendChild(card);
     page.classList.add("display-directory");
-    main.appendChild(page);
+    try {
+      main.appendChild(page);
+    } catch {}
   });
   table.appendChild(tbody);
   tableSmall.appendChild(tbodySmall);
+  const advertLen = advertise.length;
+  const rand = Math.floor(Math.random() * advertLen);
+  spotlight.appendChild(advertise[rand]);
+  try {
+    spotlight.appendChild(advertise[rand + 1]);
+  } catch {
+    spotlight.appendChild(advertise[rand - 1]);
+  }
 }
 
 listbtn.addEventListener("click", () => {

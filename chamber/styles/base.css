@@ -92,7 +92,8 @@ main {
   border: gold solid 5px;
 }
 
-#hero-msg {
+#hero-msg,
+#meeting-banner {
   background: rgba(255, 217, 0, 0.366);
   color: #002952;
   font-weight: 900;
@@ -101,6 +102,21 @@ main {
   margin-top: 150px;
   text-align: center;
   padding: 0.5rem 1rem;
+}
+
+#meeting-banner {
+  font-size: 1.5rem;
+  top: 10px;
+  background-color: #2acead;
+  margin-top: 10px;
+  color: #002952;
+}
+
+#info {
+  background-color: #d48a41e9;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 15px;
 }
 
 #hero {
@@ -148,12 +164,43 @@ span img {
   margin: 2rem;
 }
 
+#casted {
+  height: 250px;
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  gap: 25px;
+}
+
+#casted table {
+  font-size: 1.2rem;
+  height: 250px;
+  width: 80%;
+  margin: auto auto;
+  color: black;
+  background-color: #fff;
+  padding: 10px 25px;
+}
+
+#casted table tr {
+  font-size: 1.5rem;
+  padding: 5px 20px;
+}
+
+#casted table tr:nth-child(odd) {
+  background-color: #2acead;
+}
+
+#scrolltable {
+  height: 200px;
+  overflow-y: auto;
+}
+
 .weather {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background: #002952;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-items: center;
   text-align: center;
   padding: 10px;
@@ -162,10 +209,6 @@ span img {
 .weather img {
   display: block;
   margin: 0 auto;
-}
-
-.spotlights {
-  background-color: gold;
 }
 
 #ham-button {
@@ -406,8 +449,10 @@ form #submit:hover {
   margin: 50px auto;
 }
 
-.display-directory section {
+.display-directory section,
+.spotlights section {
   display: grid;
+  background-color: white;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 50px;
   width: 300px;
@@ -417,13 +462,24 @@ form #submit:hover {
   box-shadow: 0 0 10px #333;
 }
 
-.display-directory section img {
+.spotlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: gold;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.display-directory section img,
+.spotlights section img {
   display: block;
   width: 80%;
   margin: 0 auto;
 }
 
-.display-directory section div {
+.display-directory section div,
+.spotlights section {
   display: block;
   justify-content: center;
   align-items: center;
